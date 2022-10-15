@@ -13,7 +13,7 @@ export default function Login() {
       const { username, password } = values
       try {
         setError('')
-        const { data } = await axios.post(
+        const data = await axios.post(
           'http://localhost:3000/login',
           {
             username,
